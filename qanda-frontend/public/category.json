@@ -1,0 +1,76 @@
+{
+    "category": [
+        {
+            "id": "1",
+            "name": "ÁO POLO",
+            "gender": ["male", "female", "child"],
+            "filename": "polo.jpg"
+        },
+        {
+            "id": "2",
+            "name": "ÁO THUN",
+            "gender": ["male", "female", "child"],
+            "filename": "thun.jpg"
+        },
+        {
+            "id": "3",
+            "name": "ÁO KHOÁC",
+            "gender": ["male", "female", "child"],
+            "filename": "aokhoac.jpg"
+        },
+        {
+            "id": "4",
+            "name": "QUẦN BÒ",
+            "gender": ["male", "female"],
+            "filename": "quanbo.jpg"
+        },
+        {
+            "id": "5",
+            "name": "ĐỒ BỘ",
+            "gender": ["male", "child"],
+            "filename": "bodo.jpg"
+        },
+        {
+            "id": "6",
+            "name": "CHÂN VÁY",
+            "gender": ["female", "child"],
+            "filename": "chanvay.jpg"
+        },
+        {
+            "id": "7",
+            "name": "QUẦN ÂU",
+            "gender": ["female", "male"],
+            "filename": "quanau.jpg"
+        },
+        {
+            "id": "8",
+            "name": "VÁY ĐẦM",
+            "gender": ["female", "child"],
+            "filename": "vaydam.jpg"
+        },
+        {
+            "id": "9",
+            "name": "ÁO SƠ MI",
+            "gender": ["female", "male"],
+            "filename": "aosomi.jpg"
+        },
+        {
+            "id": "10",
+            "name": "QUẦN ĐÙI",
+            "gender": ["female", "male", "child"],
+            "filename": "quandui.jpg"
+        },
+        {
+            "id": "11",
+            "name": "ĐỒ LÓT",
+            "gender": ["female", "male"],
+            "filename": "dolot.jpg"
+        },
+        {
+            "id": "12",
+            "name": "PHỤ KIỆN",
+            "gender": ["female", "male"],
+            "filename": "phukien.jpg"
+        }
+    ]
+}

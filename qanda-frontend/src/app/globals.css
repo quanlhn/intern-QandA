@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.typeTitle {
+  color: orange;
+  font-family:'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.changeTypeButton {
+  border-width: 2px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.changeTypeButton:hover {
+  background-color: #FFF8CC;
+}
+
+.selectedButton {
+  background-color: #F7E469;
+}
+
+.filterButton {
+  border-width: 2px;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.selectedFilter {
+  background-color:rgb(216, 230, 243);
+}
+
+.dropdowns-category {
+  display: none;
+}
+
+.nameTag-dropdown:hover .dropdowns-category {
+  display: block;
+}
