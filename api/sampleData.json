@@ -1,0 +1,938 @@
+ [
+    {
+        "name": "Áo thun nữ",
+        "description": "Áo thun nữ năng động, dễ mặc, dễ phối giúp nàng luôn tự tin mỗi khi xuống phố",
+        "picture": "uploads/poster_femalethun.jpg",
+        "gender": "female",
+        "type": "ao-thun"
+    },
+    {
+        "name": "Áo sơ mi nữ",
+        "description": "Chất liệu cao cấp, thiết kế hiện đại, thanh lịch, kiểu dáng dành cho bạn nữ",
+        "picture": "uploads/poster_femalesomi.jpg",
+        "gender": "female",
+        "type": "ao-somi"
+    },
+    {
+        "name": "Áo polo nữ",
+        "description": "Mẫu áo trẻ trung, năng động vẫn đảm bảo sự lịch sự, mang đến cho người mặc thoải mái",
+        "picture": "uploads/poster_femalepolo.jpg",
+        "gender": "female",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo polo nam",
+        "description": "Cập nhật những mấu áo Polo nam mới nhất, thoải mái lên đồ, tự tin mặc đẹp",
+        "picture": "uploads/poster_malepolo.jpg",
+        "gender": "male",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo thun nam",
+        "description": "Hứng khởi, thoải mái mỗi ngày cùng áo thun nam Q&A. Trải nghiệm ngay",
+        "picture": "uploads/poster_malethun.jpg",
+        "gender": "male",
+        "type": "ao-thun"
+    },
+
+
+
+
+    {
+        "name": "Hàng mới về",
+        "title": "Hàng mới về",
+        "description": "Các mẫu mới nhất",
+        "thumbnail": "uploads/suggest1.jpg",
+        "sortBy": "createdAt",
+        "getDataBy": "sort"
+    },
+    {
+        "name": "Hàng bán chạy",
+        "title": "Gợi ý cho bạn",
+        "description": "Best seller",
+        "thumbnail": "uploads/suggest2.1.jpg",
+        "sortBy": "sold",
+        "getDataBy": "sort"
+    },
+    {
+        "name": "Áo polo",
+        "title": "Áo Polo Thoải Mái Mỗi Ngày",
+        "description": "Thoải mái mọi lúc, mọi nơi",
+        "thumbnail": "uploads/suggest3.jpg",
+        "sortBy": "type",
+        "filterBy": "ao-polo",
+        "getDataBy": "filter"
+    },
+    {
+        "name": "Áo thun",
+        "title": "Áo Thun Năng Động",
+        "description": "Năng động, thoải mái cả ngày",
+        "thumbnail": "uploads/suggest4.jpg",
+        "sortBy": "type",
+        "filterBy": "ao-thun",
+        "getDataBy": "filter"
+    },
+
+
+
+    {
+        "name": "Áo Polo Basic From Rộng Tay Lỡ, Áo Polo Nam Phối Sọc Trắng",
+        "ListedPrice": 109000,
+        "percentSale": 39,
+        "color_objects": [
+            {
+                "color": "Trắng Cổ Đen",
+                "picture": ["uploads/polonam1.1.jpg"]
+            },
+            {
+                "color": "Phối Trắng",
+                "picture": ["uploads/polonam1.2.jpg"]
+            },
+            {
+                "color": "Đen Cổ Trắng",
+                "picture":[ "uploads/polonam1.3.jpg"]
+            },
+            {
+                "color": "Polo Mẫu 5 Đen",
+                "picture": ["uploads/polonam1.4.jpg"]
+            },
+            {
+                "color": "Polo Mẫu 6",
+                "picture": ["uploads/polonam1.5.jpg"]
+            },
+            {
+                "color": "Polo Đen Trơn",
+                "picture": ["uploads/polonam1.6.jpg"]
+            }
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo Polo Teelab Local Brand Unisex Essentials Line",
+        "ListedPrice": 350000,
+        "percentSale": 50,
+        "color_objects": [
+            {
+                "color": "Trắng Đen",
+                "picture": ["uploads/polonam2.1.jpg", "uploads/polonam2.2.jpg", "uploads/polonam2.3.jpg"]
+            }                
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo Polo Unisex Teelab Kitten 2023",
+        "ListedPrice": 158000,
+        "percentSale": 44,
+        "color_objects": [
+            {
+                "color": "Đen",
+                "picture": ["uploads/polonam4.1.jpg", "uploads/polonam4.2.jpg"]
+            }                
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo Polo Nam Mero Chất Liệu Cotton Cao Cấp",
+        "ListedPrice": 345000,
+        "percentSale": 55,
+        "color_objects": [
+            {
+                "color": "Trắng xanh",
+                "picture": ["uploads/polonam9.1.jpg", "uploads/polonam9.2.jpg", "uploads/polonam9.3.jpg", "uploads/polonam9.4.jpg"]
+            }                
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo Polo G.C Nam Phối Màu Siêu Đẹp",
+        "ListedPrice": 300000,
+        "percentSale": 22,
+        "color_objects": [
+            {
+                "color": "Đen Be",
+                "picture": ["uploads/polonam8.1.jpg", "uploads/polonam8.2.jpg"]
+            },                
+            {
+                "color": "Be Đen",
+                "picture": ["uploads/polonam8.3.jpg"]
+            }                
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo Polo nam có cổ UGO-BLACK",
+        "ListedPrice": 350000,
+        "percentSale": 15,
+        "color_objects": [
+            {
+                "color": "Đen",
+                "picture": ["uploads/polonam7.jpg", "uploads/polonam7.1.jpg", "uploads/polonam7.2.jpg", "uploads/polonam7.3.jpg", "uploads/polonam7.4.jpg"]
+            }                
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Áo Polo SIXMEN nam cao cấp cổ bẻ",
+        "ListedPrice": 475000,
+        "percentSale": 38,
+        "color_objects": [
+            {
+                "color": "N3 Trắng MĐ viền",
+                "picture": ["uploads/polonam6.1.jpg"]
+            },
+            {
+                "color": "N1 Xanh đen MĐ viền",
+                "picture": ["uploads/polonam6.2.jpg"]
+            },
+            {
+                "color": "N4 Đen MĐ viền",
+                "picture": ["uploads/polonam6.3.jpg"]
+            },
+            {
+                "color": "NB8 Denim MĐ trơn",
+                "picture": ["uploads/polonam6.4.jpg"]
+            },
+            {
+                "color": "NB7 Xám lam MĐ viền",
+                "picture": ["uploads/polonam6.5.jpg"]
+            },
+            {
+                "color": "N5 Đô MĐ viền",
+                "picture": ["uploads/polonam6.7.jpg"]
+            }
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },                  
+    {
+        "name": "Áo thun POLO nam SEELU vải cá sấu Cotton",
+        "ListedPrice": 280000,
+        "percentSale": 36,
+        "color_objects": [
+            {
+                "color": "Đen sọc trắng",
+                "picture": ["uploads/polonam5.1.jpg"]
+            },                
+            {
+                "color": "Trắng sọc đen",
+                "picture": ["uploads/polonam5.2.jpg"]
+            },                
+            {
+                "color": "Đen sọc nâu",
+                "picture": ["uploads/polonam5.3.jpg"]
+            },                
+            {
+                "color": "Nâu sọc đen",
+                "picture": ["uploads/polonam5.4.jpg"]
+            }                
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },
+    {
+        "name": "Tee basic ss1 CREWZ áo thun tay lỡ unisex Local Brand",
+        "ListedPrice": 158000,
+        "percentSale": 50,
+        "color_objects": [
+            {
+                "color": "Đen",
+                "picture": ["uploads/thunnam1.1.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/thunnam1.2.jpg"]
+            },                
+            {
+                "color": "Hồng",
+                "picture": ["uploads/thunnam1.3.jpg"]
+            },                
+            {
+                "color": "Xanh",
+                "picture": ["uploads/thunnam1.4.jpg"]
+            },                
+            {
+                "color": "Be",
+                "picture": ["uploads/thunnam1.5.jpg"]
+            },             
+            {
+                "color": "Nâu",
+                "picture": ["uploads/thunnam1.6.jpg"]
+            }             
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    },                   
+    {
+        "name": "Áo thun unisex thời trang DWin basic tee phông trơn",
+        "ListedPrice": 180000,
+        "percentSale": 45,
+        "color_objects": [
+            {
+                "color": "Đen",
+                "picture": ["uploads/thunnam7.1.jpg"]
+            },                
+            {
+                "color": "Vàng",
+                "picture": ["uploads/thunnam7.2.jpg"]
+            },                
+            {
+                "color": "Trắng - in hình",
+                "picture": ["uploads/thunnam7.3.jpg"]
+            },                
+            {
+                "color": "Vàng - in hình",
+                "picture": ["uploads/thunnam7.4.jpg"]
+            },                
+            {
+                "color": "Be - in hình",
+                "picture": ["uploads/thunnam7.5.jpg"]
+            }         
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    },                   
+    {
+        "name": "Áo Thun Tay Ngắn Phong Cách Retro Mỹ",
+        "ListedPrice": 144000,
+        "percentSale": 31,
+        "color_objects": [
+            {
+                "color": "Xanh hải quân",
+                "picture": ["uploads/thunnam6.1.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/thunnam6.2.jpg"]
+            },                
+            {
+                "color": "Đỏ",
+                "picture": ["uploads/thunnam6.3.jpg"]
+            },                
+            {
+                "color": "Xám đậm",
+                "picture": ["uploads/thunnam6.4.jpg"]
+            },                
+            {
+                "color": "Lạc đà",
+                "picture": ["uploads/thunnam6.5.jpg"]
+            },             
+            {
+                "color": "Đen",
+                "picture": ["uploads/thunnam6.7.jpg"]
+            },             
+            {
+                "color": "Cái hồ màu xanh",
+                "picture": ["uploads/thunnam6.6.jpg"]
+            }             
+        ],
+        "size": ["L", "M", "XL", "2XL", "3XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    },                   
+    {
+        "name": "Áo thun Tshirt MELLIFFLOUS nam nữ unisex form rộng",
+        "ListedPrice": 128000,
+        "percentSale": 50,
+        "color_objects": [
+            {
+                "color": "Đen MELLIFFLOUS",
+                "picture": ["uploads/thunnam5.1.jpg"]
+            },                
+            {
+                "color": "Trắng MELLIFFLOUS",
+                "picture": ["uploads/thunnam5.2.jpg"]
+            },                
+            {
+                "color": "Trắng PROMISE",
+                "picture": ["uploads/thunnam5.3.jpg"]
+            },                
+            {
+                "color": "Trắng nắm đấm LIES",
+                "picture": ["uploads/thunnam5.4.jpg"]
+            }                          
+        ],
+        "size": ["L", "M", "XL", "XXL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    },                   
+    {
+        "name": "Áo thun nữ nam unisex tay lỡ phông local brand form",
+        "ListedPrice": 238000,
+        "percentSale": 52,
+        "color_objects": [
+            {
+                "color": "Be",
+                "picture": ["uploads/thunnam4.1.jpg"]
+            },                
+            {
+                "color": "Hồng pastel",
+                "picture": ["uploads/thunnam4.2.jpg"]
+            },                
+            {
+                "color": "Đen",
+                "picture": ["uploads/thunnam4.3.jpg"]
+            },                
+            {
+                "color": "Xám titan",
+                "picture": ["uploads/thunnam4.4.jpg"]
+            },                
+            {
+                "color": "Xanh vintage",
+                "picture": ["uploads/thunnam4.5.jpg"]
+            }             
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    },                   
+    {
+        "name": "Áo Thun Local Brand Unisex Cemmery",
+        "ListedPrice": 158000,
+        "percentSale": 56,
+        "color_objects": [
+            {
+                "color": "Đen",
+                "picture": ["uploads/thunnam3.1.jpg"]
+            },                               
+            {
+                "color": "Đen",
+                "picture": ["uploads/thunnam3.2.jpg"]
+            },                               
+            {
+                "color": "Xanh",
+                "picture": ["uploads/thunnam3.3.jpg"]
+            },                
+            {
+                "color": "Xanh",
+                "picture": ["uploads/thunnam3.4.jpg"]
+            },                
+            {
+                "color": "Be",
+                "picture": ["uploads/thunnam3.5.jpg"]
+            }             
+        ],
+        "size": ["L", "M", "XL", "2XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    },                   
+    {
+        "name": "Áo thun POLO thiết kế vải cá sấu cotton cao cấp ngắn tay cực hot AT1718",
+        "ListedPrice": 198000,
+        "percentSale": 50,
+        "color_objects": [
+            {
+                "color": "POLO 39 Xám",
+                "picture": ["uploads/polonam10.1.jpg"]
+            },                
+            {
+                "color": "POLO 18",
+                "picture": ["uploads/polonam10.2.jpg"]
+            },                
+            {
+                "color": "Phối sọc trắng",
+                "picture": ["uploads/polonam10.3.jpg"]
+            },                
+            {
+                "color": "POLO Raglan trắng",
+                "picture": ["uploads/polonam10.5.jpg"]
+            },                
+            {
+                "color": "POLO 39 Xanh đá",
+                "picture": ["uploads/polonam10.6.jpg"]
+            },                
+            {
+                "color": "POLO Raglan xám",
+                "picture": ["uploads/polonam10.7.jpg"]
+            },                
+            {
+                "color": "POLO 17",
+                "picture": ["uploads/polonam10.8.jpg"]
+            }                
+                    
+        ],
+        "size": ["S" ,"L", "M", "XL", "2XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-polo"
+    },                   
+    {
+        "name": "Áo phông oversize Raglan, Áo thun phối tay form rộng nam",
+        "ListedPrice": 150000,
+        "percentSale": 52,
+        "color_objects": [               
+            {
+                "color": "Đen Raglan",
+                "picture": ["uploads/thunnam2.1.jpg"]
+            },                
+            {
+                "color": "Đen Raglan",
+                "picture": ["uploads/thunnam2.2.jpg"]
+            },                
+            {
+                "color": "Xanh Raglan",
+                "picture": ["uploads/thunnam2.3.jpg"]
+            },                
+            {
+                "color": "Xanh Raglan",
+                "picture": ["uploads/thunnam2.4.jpg"]
+            },                
+            {
+                "color": "Xanh Raglan",
+                "picture": ["uploads/thunnam2.6.jpg"]
+            },                
+            {
+                "color": "Nâu Raglan",
+                "picture": ["uploads/thunnam2.5.jpg"]
+            }             
+        ],
+        "size": ["L", "M", "XL", "2XL"],
+        "gender": "male",
+        "category": "ao",
+        "type": "ao-thun"
+    }, 
+    {
+        "name": "Áo sơ mi 6 màu khoác ngoài",
+        "ListedPrice": 190000,
+        "percentSale": 34,
+        "color_objects": [              
+            {
+                "color": "Tím",
+                "picture": ["uploads/sominu7.1.jpg"]
+            },                
+            {
+                "color": "Xanh lá rêu",
+                "picture": ["uploads/sominu7.2.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu7.3.jpg"]
+            },                
+            {
+                "color": "Hồng cam",
+                "picture": ["uploads/sominu7.4.jpg"]
+            },                
+            {
+                "color": "Vàng nhạt",
+                "picture": ["uploads/sominu7.5.jpg"]
+            },
+            {
+                "color": "Xanh dương",
+                "picture": ["uploads/sominu7.6.jpg"]
+            }
+        ],
+        "size": ["X", "S", "M"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo sơ mi trơn dài tay chất vải kate lụa thoáng mát, thời trang",
+        "ListedPrice": 100000,
+        "percentSale": 31,
+        "color_objects": [              
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu6.1.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu6.2.jpg"]
+            },                
+            {
+                "color": "Xanh",
+                "picture": ["uploads/sominu6.3.jpg"]
+            },                
+            {
+                "color": "Xanh",
+                "picture": ["uploads/sominu6.4.jpg"]
+            },                
+            {
+                "color": "Nâu",
+                "picture": ["uploads/sominu6.5.jpg"]
+            }
+        ],
+        "size": ["X", "S", "M"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo Sơ Mi Kẻ Xốp Trơn PEONYB Nữ",
+        "ListedPrice": 138000,
+        "percentSale": 50,
+        "color_objects": [              
+            {
+                "color": "Xanh",
+                "picture": ["uploads/sominu5.1.jpg"]
+            },                
+            {
+                "color": "Vàng",
+                "picture": ["uploads/sominu5.2.jpg"]
+            },                
+            {
+                "color": "Nâu",
+                "picture": ["uploads/sominu5.3.jpg"]
+            }
+        ],
+        "size": ["X", "S", "XXL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo Sơ Mi Chất Nhung Tăm Nam Nữ Form Rộng Nâu Be Siêu Hot",
+        "ListedPrice": 145000,
+        "percentSale": 79000,
+        "color_objects": [              
+            {
+                "color": "NÂU",
+                "picture": ["uploads/sominu4.1.jpg"]
+            },                
+            {
+                "color": "NÂU",
+                "picture": ["uploads/sominu4.2.jpg"]
+            },                
+            {
+                "color": "BE NUDE",
+                "picture": ["uploads/sominu4.3.jpg"]
+            },
+            {
+                "color": "BE NUDE",
+                "picture": ["uploads/sominu4.4.jpg"]
+            }
+        ],
+        "size": ["X", "S", "XXL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo sơ mi dài tay túi ngực",
+        "ListedPrice": 139000,
+        "percentSale": 36,
+        "color_objects": [              
+            {
+                "color": "Xanh",
+                "picture": ["uploads/sominu3.1.jpg"]
+            },                
+            {
+                "color": "Xanh",
+                "picture": ["uploads/sominu3.2.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu3.3.jpg"]
+            },
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu3.4.jpg"]
+            }
+        ],
+        "size": ["X", "S", "XXL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo sơ mi nữ dài tay form rộng ulzzang kiểu hàn",
+        "ListedPrice": 139000,
+        "percentSale": 36,
+        "color_objects": [               
+            {
+                "color": "Ngẫu nhiên",
+                "picture": ["uploads/sominu2.jpg"]
+            },                
+            {
+                "color": "Đen",
+                "picture": ["uploads/sominu2.1.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu2.2.jpg"]
+            },                
+            {
+                "color": "Cam đất",
+                "picture": ["uploads/sominu2.3.jpg"]
+            },
+            {
+                "color": "Xanh bộ đội",
+                "picture": ["uploads/sominu2.4.jpg"]
+            },
+            {
+                "color": "Xám đậm",
+                "picture": ["uploads/sominu2.5.jpg"]
+            },
+            {
+                "color": "Nâu đậm",
+                "picture": ["uploads/sominu2.6.jpg"]
+            }
+        ],
+        "size": ["size 1 < 55kg", "size 2 < 69kg", "size 3 < 90kg"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo Sơ Mi Nữ Form Rộng Dài Tay",
+        "ListedPrice": 99000,
+        "percentSale": 27,
+        "color_objects": [               
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu1.1.jpg"]
+            },                
+            {
+                "color": "Trắng",
+                "picture": ["uploads/sominu1.2.jpg"]
+            },                
+            {
+                "color": "Đen",
+                "picture": ["uploads/sominu1.3.jpg"]
+            },
+            {
+                "color": "Xanh dương",
+                "picture": ["uploads/sominu1.4.jpg"]
+            },
+            {
+                "color": "Nâu",
+                "picture": ["uploads/sominu1.5.jpg"]
+            }
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-somi"
+    },                    
+    {
+        "name": "Áo polo Giả Hai Lớp Tay Ngắn Dáng Rộng Màu Sắc Tương Phản",
+        "ListedPrice": 134000,
+        "percentSale": 67000,
+        "color_objects": [               
+            {
+                "color": "Xanh lam",
+                "picture": ["uploads/polonu5.1.jpg"]
+            },                
+            {
+                "color": "Xanh lam",
+                "picture": ["uploads/polonu5.2.jpg"]
+            },                
+            {
+                "color": "Quả mơ",
+                "picture": ["uploads/polonu5.3.jpg"]
+            },
+            {
+                "color": "Đen",
+                "picture": ["uploads/polonu5.4.jpg"]
+            },
+            {
+                "color": "Đen",
+                "picture": ["uploads/polonu5.5.jpg"]
+            }
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-polo"
+    },                    
+    {
+        "name": "Áo thun có cổ , áo polo tay lỡ form rộng unisex có khoá cổ",
+        "ListedPrice": 75000,
+        "percentSale": 50,
+        "color_objects": [               
+            {
+                "color": "Sữa",
+                "picture": ["uploads/polonu4.1.jpg"]
+            },                
+            {
+                "color": "Xanh than",
+                "picture": ["uploads/polonu4.2.jpg"]
+            },                
+            {
+                "color": "Xanh rêu",
+                "picture": ["uploads/polonu4.3.jpg"]
+            }
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-polo"
+    },                    
+    {
+        "name": "npm LÔ CÁ TÍNH TAY LỠ FORM RỘNG IN CHỮ",
+        "ListedPrice": 90000,
+        "percentSale": 33,
+        "color_objects": [               
+            {
+                "color": "Thân sữa",
+                "picture": ["uploads/polonu3.1.jpg"]
+            },                
+            {
+                "color": "Battlekid Trắng",
+                "picture": ["uploads/polonu3.2.jpg"]
+            },                
+            {
+                "color": "Battlekid Đen cổ điển",
+                "picture": ["uploads/polonu3.3.jpg"]
+            },                
+            {
+                "color": "CRHSUP Trắng",
+                "picture": ["uploads/polonu3.4.jpg"]
+            },                
+            {
+                "color": "CRHSUP Đen",
+                "picture": ["uploads/polonu3.5.jpg"]
+            },                
+            {
+                "color": "Supon Trắng",
+                "picture": ["uploads/polonu3.6.jpg"]
+            },       
+            {
+                "color": "Supon Đen",
+                "picture": ["uploads/polonu3.7.jpg"]
+            },       
+            {
+                "color": "Supon Nâu",
+                "picture": ["uploads/polonu3.8.jpg"]
+            },       
+            {
+                "color": "Creativity Xanh đen",
+                "picture": ["uploads/polonu3.9.jpg"]
+            }       
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-polo"
+    },                     
+    {
+        "name": "Áo Polo Unisex Mã PL Bear Story Màu Be Phối Cổ Nâu",
+        "ListedPrice": 199000,
+        "percentSale": 35,
+        "color_objects": [               
+            {
+                "color": "Màu be - Super Polit",
+                "picture": ["uploads/polonu2.1.jpg"]
+            },                
+            {
+                "color": "Màu be - Tai thỏ",
+                "picture": ["uploads/polonu2.2.jpg"]
+            },                
+            {
+                "color": "Màu be - Flutty Bear",
+                "picture": ["uploads/polonu2.3.jpg"]
+            },                
+            {
+                "color": "Màu be - Toast",
+                "picture": ["uploads/polonu2.4.jpg"]
+            },                
+            {
+                "color": "Màu be - Chanllenge",
+                "picture": ["uploads/polonu2.5.jpg"]
+            },                
+            {
+                "color": "Màu be - Bear Story",
+                "picture": ["uploads/polonu2.6.jpg"]
+            }       
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-polo"
+    },                     
+    {
+        "name": "Áo Polo Nữ Unisex By JOLI Mã PL Happy Mix",
+        "ListedPrice": 199000,
+        "percentSale": 35,
+        "color_objects": [               
+            {
+                "color": "Be-Hoa cúc trắng",
+                "picture": ["uploads/polonu1.1.jpg"]
+            },                
+            {
+                "color": "Xanh-Hoa cúc trắng",
+                "picture": ["uploads/polonu1.2.jpg"]
+            },                
+            {
+                "color": "Đen-Hoa cúc trắng",
+                "picture": ["uploads/polonu1.4.jpg"]
+            },                
+            {
+                "color": "Đen-unlike",
+                "picture": ["uploads/polonu1.5.jpg"]
+            },                
+            {
+                "color": "Đen-Thỏ Scrub",
+                "picture": ["uploads/polonu1.7.jpg"]
+            },                
+            {
+                "color": "Xanh-Juice",
+                "picture": ["uploads/polonu1.8.jpg"]
+            },                
+            {
+                "color": "Đen-Flechazo",
+                "picture": ["uploads/polonu1.6.jpg"]
+            }             
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "female",
+        "category": "ao",
+        "type": "ao-polo"
+    },                     
+    {
+        "name": "Quần tây nam MMANS chất vải 79 cao cấp ống côn co giãn",
+        "ListedPrice": 259000,
+        "percentSale": 20,
+        "color_objects": [               
+            {
+                "color": "Be-Hoa cúc trắng",
+                "picture": ["uploads/quanaunam1.jpg", "uploads/quanaunam1.1.jpg"]
+            },                
+            {
+                "color": "Xanh-Hoa cúc trắng",
+                "picture": ["uploads/quanaunam1.2.jpg"]
+            },                
+            {
+                "color": "Đen-Hoa cúc trắng",
+                "picture": ["uploads/quanaunam1.3.jpg"]
+            },                
+            {
+                "color": "Đen-unlike",
+                "picture": ["uploads/quanaunam1.4.jpg"]
+            }
+        ],
+        "size": ["L", "M", "XL"],
+        "gender": "male",
+        "category": "quan",
+        "type": "quan-au"
+    }                 
+]

@@ -1,25 +1,41 @@
 'use client'
 
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import SwiperCore, { EffectCoverflow, Pagination, Scrollbar, A11y, Navigation, Autoplay } from "swiper";
 // import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import ClothType from "./ClothType";
 import Card from "./Card";
 import Header from "./Header";
+import { Product, Suggestion, BE_SUGGEST_PATH, BE_PATH, BE_PRODUCT_PATH } from "./CustomInterface";
 
 import event1 from './../../public/event1.png';
 import event2 from './../../public/event2.jpg';
 import event3 from './../../public/event3.jpg';
 import event4 from './../../public/event4.jpg';
 import categoryJSON from './../../public/category.json'
+import { stringify } from "querystring";
 
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 const Homepage: React.FC = () => {    
+  const [fetchData, setFetchData] = useState<Array<Product>>()
+  const [suggestions, setSuggestions] = useState<Array<Suggestion>>()
+
+  useEffect(() => {
+
+    fetch('http://localhost:8080/api/suggestions')
+      .then(res => res.json())
+      .then(data => {setSuggestions(data.response)})
+
+    fetch('http://localhost:8080/api/product') 
+      .then(res => res.json())
+      .then(data => {setFetchData(data.response)})
+  }, [])
 
 
   const [categoryChosen, chooseCategory] = useState("male")
@@ -36,10 +52,13 @@ const Homepage: React.FC = () => {
     return tagsShown
   }  
 
+  // const getImageUrl = () => {
+  //   console.log(response[1]['pics[0]'])
+  //   return stringify(response[1]['pics[0]'])
+  // }
+
   return (
       <div className='homepage px-10 relative'>
-        <Header/>
-
         <div className="main mt-20">
           <Swiper
               spaceBetween={50}
@@ -99,23 +118,74 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           <br/>
-          <SuggestProducts/>
-          <SuggestProducts/>
+          {suggestions ?
+            suggestions.map((suggestion, index) => {
+              return (
+                <div><SuggestProducts key={index} products={fetchData} suggestion={suggestion}/></div> 
+              )
+            })
+          :
+            <div></div>         
+          }
         </div>
 
       </div>
   )
 }
 
-const SuggestProducts: React.FC = () => {
+type Props = {
+  products: Array<Product> | undefined
+  suggestion: Suggestion 
+}
+
+const SuggestProducts: React.FC<Props> = ({suggestion}) => {
+
+  const [products, setProducts] = useState<Array<Product>>()
+
+  useEffect(() => {
+    if (suggestion.getDataBy = 'sort') {
+      fetch (BE_PRODUCT_PATH + '/findProductsAndSort', {
+        method: 'POST',
+        mode: 'cors', 
+        headers: {
+            'Content-Type': 'application/json'
+            
+        },
+        body: JSON.stringify({
+          sort_name: suggestion.sortBy
+        })
+      })
+        .then(res => res.json())
+        .then (data => setProducts(data.response))
+    } else if (suggestion.getDataBy = 'filter') {
+      if(suggestion.sortBy =='type') {
+        fetch(BE_PRODUCT_PATH + '/findProductsByType', {
+          method: 'POST',
+            mode: 'cors', 
+            headers: {
+                'Content-Type': 'application/json'
+                
+            },
+            body: JSON.stringify({
+                s_type: suggestion.filterBy
+            })
+        })
+        .then(res => res.json())
+        .then (data => setProducts(data.response))
+      }
+    }
+  },[])
+
+  // console.log('props: ')
+  // console.log(products == undefined ? 'khum co products' : products[1])
   return (
     <div className="suggestProducts w-full mb-10">
-      <h2 className="mb-6 text-lg">Hàng mới về</h2>
+      <h2 className="mb-6 text-lg">{suggestion.title}</h2>
       <div className="products w-full h-96 flex">
         <div className="discription h-full relative w-[16%] ">
-          <img className="h-full w-full" src={require('./../../public/lastest/sample.jpg').default.src} />
+          <img className="h-full w-full" src={BE_PATH + suggestion.thumbnail} />
           <h1 className="text-discrip absolute w-full text-center bottom-1/3 text-white text-2xl font-roboto">
-            Hàng mới về <br/> <div className="text-lg">Các mẫu mới nhất</div>
+            {suggestion.name} <br/> <div className="text-lg">{suggestion.description}</div>
           </h1>
         </div>
             {/* <Card />
@@ -124,22 +194,36 @@ const SuggestProducts: React.FC = () => {
             <Card /> */}
         <Swiper
               spaceBetween={10}
-              slidesPerView={4}
+              slidesPerView={5}
               navigation = {{
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev"
                 }}
-              autoplay={{delay:3000}}
+              autoplay={{delay:5000}}
               loop={true}
+              allowTouchMove = {false}
               className="w-[84%] "
               // centeredSlides={true}
               // centeredSlidesBounds = {true}
             >
-              <SwiperSlide><Card /></SwiperSlide>
-              <SwiperSlide><Card /></SwiperSlide>
-              <SwiperSlide><Card /></SwiperSlide>
-              <SwiperSlide><Card /></SwiperSlide>
-              <SwiperSlide><Card /></SwiperSlide>
+              {/* <SwiperSlide><Card product={props.fetchData[0]} /></SwiperSlide>
+              <SwiperSlide><Card product={props.fetchData[0]} /></SwiperSlide>
+              <SwiperSlide><Card product={props.fetchData[0]} /></SwiperSlide>
+              <SwiperSlide><Card product={props.fetchData[0]} /></SwiperSlide>
+              <SwiperSlide><Card product={props.fetchData[0]} /></SwiperSlide> */}
+
+              {products == undefined 
+                ? 
+                  <div>loading...</div>
+                :
+                products.map((product, index) => {
+                  return (
+                    <SwiperSlide key={product._id}>
+                      <Card product={product} />
+                    </SwiperSlide>
+                  )
+                })
+              }
               <span className="swiper-button-prev"></span>
               <span className="swiper-button-next"></span>
         </Swiper>
@@ -148,5 +232,7 @@ const SuggestProducts: React.FC = () => {
     </div>
   )
 }
+
+
 
 export default Homepage

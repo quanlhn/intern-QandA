@@ -1,0 +1,317 @@
+[
+ {
+  "code": "01",
+  "province": "Thành phố Hà Nội",
+  "level": "Thành phố Trung ương"
+ },
+ {
+  "code": "02",
+  "province": "Tỉnh Hà Giang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "04",
+  "province": "Tỉnh Cao Bằng",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "06",
+  "province": "Tỉnh Bắc Kạn",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "08",
+  "province": "Tỉnh Tuyên Quang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "10",
+  "province": "Tỉnh Lào Cai",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "11",
+  "province": "Tỉnh Điện Biên",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "12",
+  "province": "Tỉnh Lai Châu",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "14",
+  "province": "Tỉnh Sơn La",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "15",
+  "province": "Tỉnh Yên Bái",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "17",
+  "province": "Tỉnh Hoà Bình",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "19",
+  "province": "Tỉnh Thái Nguyên",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "20",
+  "province": "Tỉnh Lạng Sơn",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "22",
+  "province": "Tỉnh Quảng Ninh",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "24",
+  "province": "Tỉnh Bắc Giang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "25",
+  "province": "Tỉnh Phú Thọ",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "26",
+  "province": "Tỉnh Vĩnh Phúc",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "27",
+  "province": "Tỉnh Bắc Ninh",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "30",
+  "province": "Tỉnh Hải Dương",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "31",
+  "province": "Thành phố Hải Phòng",
+  "level": "Thành phố Trung ương"
+ },
+ {
+  "code": "33",
+  "province": "Tỉnh Hưng Yên",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "34",
+  "province": "Tỉnh Thái Bình",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "35",
+  "province": "Tỉnh Hà Nam",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "36",
+  "province": "Tỉnh Nam Định",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "37",
+  "province": "Tỉnh Ninh Bình",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "38",
+  "province": "Tỉnh Thanh Hóa",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "40",
+  "province": "Tỉnh Nghệ An",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "42",
+  "province": "Tỉnh Hà Tĩnh",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "44",
+  "province": "Tỉnh Quảng Bình",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "45",
+  "province": "Tỉnh Quảng Trị",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "46",
+  "province": "Tỉnh Thừa Thiên Huế",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "48",
+  "province": "Thành phố Đà Nẵng",
+  "level": "Thành phố Trung ương"
+ },
+ {
+  "code": "49",
+  "province": "Tỉnh Quảng Nam",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "51",
+  "province": "Tỉnh Quảng Ngãi",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "52",
+  "province": "Tỉnh Bình Định",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "54",
+  "province": "Tỉnh Phú Yên",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "56",
+  "province": "Tỉnh Khánh Hòa",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "58",
+  "province": "Tỉnh Ninh Thuận",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "60",
+  "province": "Tỉnh Bình Thuận",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "62",
+  "province": "Tỉnh Kon Tum",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "64",
+  "province": "Tỉnh Gia Lai",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "66",
+  "province": "Tỉnh Đắk Lắk",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "67",
+  "province": "Tỉnh Đắk Nông",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "68",
+  "province": "Tỉnh Lâm Đồng",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "70",
+  "province": "Tỉnh Bình Phước",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "72",
+  "province": "Tỉnh Tây Ninh",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "74",
+  "province": "Tỉnh Bình Dương",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "75",
+  "province": "Tỉnh Đồng Nai",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "77",
+  "province": "Tỉnh Bà Rịa - Vũng Tàu",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "79",
+  "province": "Thành phố Hồ Chí Minh",
+  "level": "Thành phố Trung ương"
+ },
+ {
+  "code": "80",
+  "province": "Tỉnh Long An",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "82",
+  "province": "Tỉnh Tiền Giang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "83",
+  "province": "Tỉnh Bến Tre",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "84",
+  "province": "Tỉnh Trà Vinh",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "86",
+  "province": "Tỉnh Vĩnh Long",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "87",
+  "province": "Tỉnh Đồng Tháp",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "89",
+  "province": "Tỉnh An Giang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "91",
+  "province": "Tỉnh Kiên Giang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "92",
+  "province": "Thành phố Cần Thơ",
+  "level": "Thành phố Trung ương"
+ },
+ {
+  "code": "93",
+  "province": "Tỉnh Hậu Giang",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "94",
+  "province": "Tỉnh Sóc Trăng",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "95",
+  "province": "Tỉnh Bạc Liêu",
+  "level": "Tỉnh"
+ },
+ {
+  "code": "96",
+  "province": "Tỉnh Cà Mau",
+  "level": "Tỉnh"
+ }
+]

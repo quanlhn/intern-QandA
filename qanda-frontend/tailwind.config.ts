@@ -12,6 +12,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'login': 'url(/public/20988.jpg)'
       },
 
     },
@@ -19,7 +20,7 @@ const config: Config = {
       primary: '#441151',
             secondary: '#EE85B5',
             violet: '#883677',
-            congo: '##FF958C',
+            cc: '##FF958C',
             success: '#5FC790',
             warning: '#FFA600',
             danger: '#FF5630',
@@ -47,6 +48,8 @@ const config: Config = {
             orange: '#E69525',
             hover: "#FFF8CC",
             focus: '#F7E469',
+            orange2: '#fcaf17',
+            lightgreen: '#52c41a'
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
