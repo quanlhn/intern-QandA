@@ -1,6 +1,7 @@
 const User = require('../models/User')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const { default: mongoose } = require('mongoose')
 
 const register = (req, res, next) => {
     bcrypt.hash(req.body.password, 10, function(err, hashedPass) {
@@ -116,7 +117,8 @@ const updateCart = (req, res, next) => {
     })
 }
 
-const updateOrder = (req, res, order) => {
+const addOrder = (req, res, order) => {
+    console.log(order)
     let userID = req.body.userID
     User.findById(userID)
     .then(response => {
@@ -142,6 +144,81 @@ const updateOrder = (req, res, order) => {
     })
 }
 
+const updateOrder = (req, res, userID) => {
+    // let userID = req.body.userID
+    let orderID = req.body.orderID
+    let status = req.body.status
+   
+    User.findOneAndUpdate( {_id: userID},
+        { $set: { 'orders.$[elem].status': status } },
+        { 
+            arrayFilters: [{ "elem._id": new mongoose.Types.ObjectId(orderID) }]
+        }
+    )
+    .catch(err => {
+        res.json({
+            message: 'An error occured!'
+        })
+    })
+    
+}
+
+const findStaffs = (req, res, next) => {
+    User.find({ role: 'staff' }).exec()
+    .then(response => {
+        res.json({
+            response
+        })
+    })
+    .catch(err => {
+        res.json({
+            message: "An error occurred!"
+        })
+    })
+}
+
+const deleteUser = (req, res, next) => {
+    const userID = req.body.id
+    User.findByIdAndDelete(userID)
+    .then(response => {
+        res.json({
+            message: 'User Deleted!'
+        })
+    })
+    .catch(err => {
+        res.json({
+            message: "An error occurred!"
+        })
+    })
+}
+
+const updateUser = (req, res, next) => {
+    let userID = req.body.userID
+    let updatedData = {
+        name: req.body.name,
+        phone: req.body.phone,
+        gender: req.body.gender,
+        birth: req.body.birth,
+        email: req.body.email,
+        orders: req.body.orders,
+        cartDrawer: req.body.cartDrawer,
+    }
+    console.log(updatedData)
+    User.findByIdAndUpdate(userID, {$set: updatedData})
+    .then(response => {
+        res.json({
+            message: 'User data updated Successfully!'
+        })
+    })
+    .catch(error => {
+        res.json({
+            message: 'An error occured!'
+        })
+    })
+}
+
+
+
 module.exports = {
-    register, login, refreshToken, updateCart, updateOrder
+    register, login, refreshToken, updateCart, addOrder, updateOrder, findStaffs, deleteUser, updateUser
 }

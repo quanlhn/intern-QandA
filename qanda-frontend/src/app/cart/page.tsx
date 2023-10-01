@@ -29,9 +29,13 @@ const Cart: React.FC = () => {
     
     const getAmountProducs = () => {
         let amount = 0
-        userContext.user.cartDrawer.forEach(c => {
-            amount += c.amount
-        })        
+        if (window.localStorage) {
+            const localUser = JSON.parse(localStorage.user)
+            console.log(localUser)
+            localUser.cartDrawer.forEach((c: any) => {
+                amount += c.amount
+            })        
+        }
         return amount
     }
     
@@ -63,7 +67,6 @@ const Cart: React.FC = () => {
     }
     const submitCheckout = () => {
         console.log(form.getFieldsValue())
-
         
         const order = {
             userID: userContext.user.id,
@@ -115,14 +118,29 @@ const Cart: React.FC = () => {
             localStorage.setItem('user', JSON.stringify(newUserData))
         }
         setTotalPay(0)
-        setNumberOfProducts(getAmountProducs())
         setCartsChosen([])
+        setNumberOfProducts(getAmountProducs())
 
         setLoading(true)
+
+        fetch(BE_API + 'user/updateUser', {
+            method: 'POST',
+            mode: 'cors', 
+            headers: {
+                'Content-Type': 'application/json'
+                
+            },
+            body: JSON.stringify({
+                userID: userContext.user.id,
+                cartDrawer: newCartDrawer
+            })
+        })
+        
+
         setTimeout(() => {
             setLoading(false)
             setOpenModal(false)
-        }, 3000)
+        }, 3000)   
     }
 
     // useEffect(() => {
@@ -130,6 +148,7 @@ const Cart: React.FC = () => {
     // }, [])
 
     const selectAllCheckBok = (e: any) => {
+        
         if (e.checked) {
             checkboxRef.current.forEach((checkbox) => {
                 if (checkbox) {
@@ -238,7 +257,7 @@ const Cart: React.FC = () => {
 
 
     return (
-        <div className="h-full px-10 bg-grey2/20">
+        <div className="min-h-screen px-10 bg-grey2/20">
             <br/>
             <div className="main flex flex-row mt-20">
                 <div className="carts py-4 mr-8 font-roboto bg-white max-w-5xl  rounded-lg">

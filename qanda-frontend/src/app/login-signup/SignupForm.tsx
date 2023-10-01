@@ -80,7 +80,9 @@ const SignupForm: React.FC = () => {
                         email,
                         phone,
                         password,
-                        role: 'customer'
+                        role: 'customer',
+                        gender: '',
+                        birth: null
                     })
                 })
                     .then(res => res.json())

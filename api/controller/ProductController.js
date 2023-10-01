@@ -173,7 +173,7 @@ const update = (req, res, next) => {
     Product.findByIdAndUpdate(productID, {$set: updatedData})
     .then(response => {
         res.json({
-            message: 'Employee updated Successfully!'
+            message: 'Product updated Successfully!'
         })
     })
     .catch(error => {

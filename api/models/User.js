@@ -22,7 +22,13 @@ const userSchema = new Schema({
     },
     role: {
         type: String
-    }
+    },
+    gender: {
+        type: String
+    },
+    birth: {
+        type: Date
+    },
 }, {timestamps: true})
 
 const User = mongoose.model('User', userSchema)

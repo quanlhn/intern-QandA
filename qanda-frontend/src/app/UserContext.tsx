@@ -10,6 +10,8 @@ type UserType = {
   email: string,
   role: string,
   isLoggedIn: boolean,
+  gender: string,
+  birth: Date,
   cartDrawer: Array<Cart>,
   orders: Array<Order>
 }
@@ -39,6 +41,8 @@ export const UserProvider = ({
       phoneNumber: '',
       email: '',
       role:'',
+      gender: '',
+      birth: new Date(),
       isLoggedIn: false,
       cartDrawer: new Array<Cart>(),
       orders: new Array<Order>()

@@ -61,6 +61,8 @@ const LoginForm: React.FC<Props> = ({fc}: Props) => {
                         phoneNumber: data.phone,
                         email: data.email,
                         isLoggedIn: true,
+                        gender: data.gender,
+                        birth: data.birth,
                         cartDrawer: data.cartDrawer,
                         role: data.role,
                         orders: data.order ? data.order : [],

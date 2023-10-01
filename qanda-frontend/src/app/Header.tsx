@@ -18,6 +18,8 @@ const Header: React.FC = () => {
         phoneNumber: '',
         email: '',
         role: '',
+        gender: '',
+        birth: new Date(),
         isLoggedIn: false,
         cartDrawer: [],
         orders: []
@@ -80,7 +82,7 @@ const Header: React.FC = () => {
                             <div className='pl-5 relative nameTag-dropdown'>
                                     Hello, {userStorage.name}
                                 <ul className='dropdowns-category absolute right-0 text-sm bg-white px-2 py-2'>
-                                    {userContext.user.role == 'admin' ? 
+                                    {userContext.user.role == 'admin' || userContext.user.role == 'staff' ? 
                                     <Link href={{pathname: "/management"}}><li>Quản lý</li></Link>
                                     :
                                     <li>Tài khoản của tôi</li>
